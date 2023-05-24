@@ -8,11 +8,30 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var text = "こんにちは"
+    @State var message = "何も押されていません　"
     
     var body: some View {
         VStack {
-            Image("met-gaurd")
+            Text(message)
+            
+            Button("ボタン１") {
+                message = "ボタン１が押された"
+            }
+            
+            Button("ボタン２",
+                   action: {
+                message = "ボタン２が押された"
+                }
+            )
+            
+            Button(
+                action: {
+                    message = "ボタン３が押された"
+                },
+                label: {
+                    Text("ボタン３")
+                }
+            )
         }
     }
 }
