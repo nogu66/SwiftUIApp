@@ -11,9 +11,11 @@ struct ContentView: View {
     @State var message = "何も押されていません　"
     
     var body: some View {
-        Image("met-gaurd")
-            .resizable()
-            .aspectRatio(contentMode: .fit)
+        Text("こんにちは!")
+            .frame(maxWidth: .infinity)
+            .frame(height: 100)
+            .background(Color.red)
+            .foregroundColor(Color.white)
     }
 }
 
