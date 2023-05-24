@@ -11,11 +11,12 @@ struct ContentView: View {
     @State var message = "何も押されていません　"
     
     var body: some View {
-        Text("こんにちは!")
-            .frame(maxWidth: .infinity)
-            .frame(height: 100)
-            .background(Color.red)
-            .foregroundColor(Color.white)
+        VStack {
+            Text("こんにちは!")
+
+            Text("こんにちは!")
+                .font(.88)
+        }
     }
 }
 
