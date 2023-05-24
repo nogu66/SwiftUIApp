@@ -12,12 +12,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Spacer()
-            Text("Hello World!")
-            Spacer()
-            Text("Hello World!")
-            Spacer()
-
+            Image("met-gaurd")
         }
     }
 }
