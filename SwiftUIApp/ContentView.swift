@@ -12,26 +12,10 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text(message)
-            
-            Button("ボタン１") {
-                message = "ボタン１が押された"
-            }
-            
-            Button("ボタン２",
-                   action: {
-                message = "ボタン２が押された"
-                }
-            )
-            
-            Button(
-                action: {
-                    message = "ボタン３が押された"
-                },
-                label: {
-                    Text("ボタン３")
-                }
-            )
+            Text("りんご")
+                .padding(.bottom)
+            Text("みかん")
+            Text("バナナ")
         }
     }
 }
