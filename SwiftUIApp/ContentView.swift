@@ -11,12 +11,9 @@ struct ContentView: View {
     @State var message = "何も押されていません　"
     
     var body: some View {
-        VStack {
-            Text("りんご")
-                .padding(.bottom)
-            Text("みかん")
-            Text("バナナ")
-        }
+        Image("met-gaurd")
+            .resizable()
+            .aspectRatio(contentMode: .fit)
     }
 }
 
