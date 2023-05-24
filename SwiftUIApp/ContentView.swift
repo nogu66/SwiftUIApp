@@ -12,12 +12,12 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Text(text)
-                .padding()
-            
-            Button("ボタン") {
-                text = "こんばんは"
-            }
+            Spacer()
+            Text("Hello World!")
+            Spacer()
+            Text("Hello World!")
+            Spacer()
+
         }
     }
 }
