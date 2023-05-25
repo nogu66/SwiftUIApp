@@ -8,15 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var message = "何も押されていません　"
-    
     var body: some View {
-        HStack {
-            Text("Hello, Swift!")
-                .background(Color.yellow)
-            Text("Hello, world!")
-                .background(Color.cyan)
-        }
+        Color.cyan
+    }
+}
+
+struct IgnoresSafeAreaContentView: View {
+    var body: some View {
+        Color.cyan
+            .ignoresSafeArea()
+    }
+}
+
+struct IgnoresSafeAreaContentView_Previes:
+    PreviewProvider {
+    static var previews: some View {
+        IgnoresSafeAreaContentView()
+            .previewDevice("iPhone 13")
+            
     }
 }
 
