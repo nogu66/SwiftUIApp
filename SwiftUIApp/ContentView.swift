@@ -11,10 +11,11 @@ struct ContentView: View {
     @State var message = "何も押されていません　"
     
     var body: some View {
-        //2つの部品を重ねる
-        ZStack {
-            Color.yellow
+        HStack {
+            Text("Hello, Swift!")
+                .background(Color.yellow)
             Text("Hello, world!")
+                .background(Color.cyan)
         }
     }
 }
