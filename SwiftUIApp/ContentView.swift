@@ -15,7 +15,7 @@ struct ContentView: View {
             Text("こんにちは!")
 
             Text("こんにちは!")
-                .font(.88)
+                .font(.title)
         }
     }
 }
